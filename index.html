@@ -16,16 +16,14 @@
     <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="UCAS">
     <meta property="og:description" content="UCAS UCAS UCAS UCAS UCAS UCAS UCAS">
-    <meta property="og:image"
-        content="assets/favicon/cover.png">
+    <meta property="og:image" content="assets/favicon/cover.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="UCAS">
     <meta property="twitter:description" content="UCAS UCAS UCAS UCAS UCAS UCAS UCAS">
-    <meta property="twitter:image"
-        content="assets/favicon/cover.png">
+    <meta property="twitter:image" content="assets/favicon/cover.png">
 
     <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -37,21 +35,19 @@
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#76b82b">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.css"
-        integrity="sha512-vlGfX4PPMN4Fx3VxC+9TnUXsFXCvHNisDkeUG0kmVsXV9sYhkHx0dbX2F2JbqrdKD5KrdCJUloOW5QZMBUb6rQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.css" integrity="sha512-vlGfX4PPMN4Fx3VxC+9TnUXsFXCvHNisDkeUG0kmVsXV9sYhkHx0dbX2F2JbqrdKD5KrdCJUloOW5QZMBUb6rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Start Hero Section  -->
-    <div class="home-sec projects">
+    <div class="home-sec projects forJS" id="home">
 
         <div class="container">
             <nav class="navbar-box">
@@ -73,19 +69,19 @@
 
                                     </button>
                                     <li>
-                                        <a href="index.html">HOME</a>
+                                        <a class="cus-nav-link" href="#home">HOME</a>
                                     </li>
                                     <li>
-                                        <a href="about.html">ABOUT US</a>
+                                        <a class="cus-nav-link" href="#about">ABOUT US</a>
                                     </li>
                                     <li>
-                                        <a href="keuwait.html">KUWAIT CENTER</a>
+                                        <a class="cus-nav-link" href="#keuwait">KUWAIT CENTER</a>
                                     </li>
                                     <li>
-                                        <a href="projects.html">PROJECTS</a>
+                                        <a class="cus-nav-link" href="#projects">PROJECTS</a>
                                     </li>
                                     <li>
-                                        <a href="publications.html">PUBLICATIONS</a>
+                                        <a class="cus-nav-link" href="#publications">PUBLICATIONS</a>
                                     </li>
                                 </ul>
                             </div>
@@ -108,12 +104,11 @@
                     <div class="hero-section">
                         <div class="container">
 
-
-                            <div class="hero-text-box">
-                                <p class="hero-min-title">
+                            <div class="hero-text-box" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                <p class="hero-min-title" data-swiper-animation="animate__fadeIn" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     Our Impact
                                 </p>
-                                <h1 class="hero-page-title">
+                                <h1 class="hero-page-title" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     We've <br> achieved a lot, but much remains to come true.
                                 </h1>
                             </div>
@@ -127,13 +122,11 @@
                     <div class="hero-section">
                         <div class="container">
 
-
-
-                            <div class="hero-text-box">
-                                <p class="hero-min-title">
+                            <div class="hero-text-box" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                <p class="hero-min-title" data-swiper-animation="animate__fadeIn" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     Our Impact
                                 </p>
-                                <h1 class="hero-page-title">
+                                <h1 class="hero-page-title" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     We've <br> achieved a lot, but much remains to come true.
                                 </h1>
                             </div>
@@ -147,12 +140,11 @@
                     <div class="hero-section">
                         <div class="container">
 
-
-                            <div class="hero-text-box">
-                                <p class="hero-min-title">
+                            <div class="hero-text-box" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                <p class="hero-min-title" data-swiper-animation="animate__fadeIn" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     Our Impact
                                 </p>
-                                <h1 class="hero-page-title">
+                                <h1 class="hero-page-title" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     We've <br> achieved a lot, but much remains to come true.
                                 </h1>
                             </div>
@@ -166,12 +158,29 @@
                     <div class="hero-section">
                         <div class="container">
 
-
-                            <div class="hero-text-box">
-                                <p class="hero-min-title">
+                            <div class="hero-text-box" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                <p class="hero-min-title" data-swiper-animation="animate__fadeIn" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     Our Impact
                                 </p>
-                                <h1 class="hero-page-title">
+                                <h1 class="hero-page-title" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                    We've <br> achieved a lot, but much remains to come true.
+                                </h1>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-section">
+                        <div class="container">
+
+                            <div class="hero-text-box" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                <p class="hero-min-title" data-swiper-animation="animate__fadeIn" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                    Our Impact
+                                </p>
+                                <h1 class="hero-page-title" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     We've <br> achieved a lot, but much remains to come true.
                                 </h1>
                             </div>
@@ -275,10 +284,9 @@
     <!-- End Second Section  -->
 
     <!-- Start Success Section  -->
-    <div class="success-section">
+    <div class="success-section forJS" id="about">
         <div class="container">
-            <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Behind Every Great <br> <span
-                    class="line-word">Success</span> is Tale.</h3>
+            <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">Behind Every Great <br> <span class="line-word">Success</span> is Tale.</h3>
 
 
             <div class="swiper swiper-exper">
@@ -289,17 +297,14 @@
                         <div class="success-content">
 
                             <div class="col-lg-6">
-                                <div class="success-info">
-                                    <p class="success-text-info">
-                                        I've been stuck in not getting the results I aspire for on my Youtube channel.
-                                        Felt exhausted and desperate; I never imagined that I would have the channel of
-                                        my dreams one day. Supporting us with the demanded training, professional
-                                        equipment, and constructively
+                                <div class="success-info" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                    <p class="success-text-info" data-swiper-animation="animate__backInUp" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                        I've been stuck in not getting the results I aspire for on my Youtube channel. Felt exhausted and desperate; I never imagined that I would have the channel of my dreams one day. Supporting us with the demanded training, professional equipment, and constructively
                                         focused mentoring led our team to get significant results.
                                     </p>
-                                    <p class="success-person">(Mohammed Al Natour)</p>
+                                    <p class="success-person" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">(Mohammed Al Natour)</p>
                                 </div>
-                                <div class="more-div">
+                                <div class="more-div" data-swiper-animation="animate__backInUp" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     <a href="#" class="more-link">Read more</a>
                                 </div>
                             </div>
@@ -316,17 +321,14 @@
                         <div class="success-content">
 
                             <div class="col-lg-6">
-                                <div class="success-info">
-                                    <p class="success-text-info">
-                                        I've been stuck in not getting the results I aspire for on my Youtube channel.
-                                        Felt exhausted and desperate; I never imagined that I would have the channel of
-                                        my dreams one day. Supporting us with the demanded training, professional
-                                        equipment, and constructively
+                                <div class="success-info" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                    <p class="success-text-info" data-swiper-animation="animate__backInUp" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                        I've been stuck in not getting the results I aspire for on my Youtube channel. Felt exhausted and desperate; I never imagined that I would have the channel of my dreams one day. Supporting us with the demanded training, professional equipment, and constructively
                                         focused mentoring led our team to get significant results.
                                     </p>
-                                    <p class="success-person">(Mohammed Al Natour)</p>
+                                    <p class="success-person" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">(Mohammed Al Natour)</p>
                                 </div>
-                                <div class="more-div">
+                                <div class="more-div" data-swiper-animation="animate__backInUp" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     <a href="#" class="more-link">Read more</a>
                                 </div>
                             </div>
@@ -343,17 +345,14 @@
                         <div class="success-content">
 
                             <div class="col-lg-6">
-                                <div class="success-info">
-                                    <p class="success-text-info">
-                                        I've been stuck in not getting the results I aspire for on my Youtube channel.
-                                        Felt exhausted and desperate; I never imagined that I would have the channel of
-                                        my dreams one day. Supporting us with the demanded training, professional
-                                        equipment, and constructively
+                                <div class="success-info" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                    <p class="success-text-info" data-swiper-animation="animate__backInUp" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                        I've been stuck in not getting the results I aspire for on my Youtube channel. Felt exhausted and desperate; I never imagined that I would have the channel of my dreams one day. Supporting us with the demanded training, professional equipment, and constructively
                                         focused mentoring led our team to get significant results.
                                     </p>
-                                    <p class="success-person">(Mohammed Al Natour)</p>
+                                    <p class="success-person" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">(Mohammed Al Natour)</p>
                                 </div>
-                                <div class="more-div">
+                                <div class="more-div" data-swiper-animation="animate__backInUp" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     <a href="#" class="more-link">Read more</a>
                                 </div>
                             </div>
@@ -370,17 +369,14 @@
                         <div class="success-content">
 
                             <div class="col-lg-6">
-                                <div class="success-info">
-                                    <p class="success-text-info">
-                                        I've been stuck in not getting the results I aspire for on my Youtube channel.
-                                        Felt exhausted and desperate; I never imagined that I would have the channel of
-                                        my dreams one day. Supporting us with the demanded training, professional
-                                        equipment, and constructively
+                                <div class="success-info" data-swiper-animation="animate__fadeIn" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                    <p class="success-text-info" data-swiper-animation="animate__backInUp" data-delay="1s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
+                                        I've been stuck in not getting the results I aspire for on my Youtube channel. Felt exhausted and desperate; I never imagined that I would have the channel of my dreams one day. Supporting us with the demanded training, professional equipment, and constructively
                                         focused mentoring led our team to get significant results.
                                     </p>
-                                    <p class="success-person">(Mohammed Al Natour)</p>
+                                    <p class="success-person" data-swiper-animation="animate__backInUp" data-delay="1.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">(Mohammed Al Natour)</p>
                                 </div>
-                                <div class="more-div">
+                                <div class="more-div" data-swiper-animation="animate__backInUp" data-delay="0.5s" data-swiper-out-animation="animate__fadeOut" data-out-duration=".2s">
                                     <a href="#" class="more-link">Read more</a>
                                 </div>
                             </div>
@@ -412,14 +408,9 @@
                     <img loading="lazy" src="assets/images/our-mission.webp" alt="Our Mission">
                 </div>
                 <div class="col-lg-6 our-mission-info">
-                    <h3 class="sec-title" data-aos="fade-up" data-aos-delay="0">Our <span class="line-word"
-                            data-aos="fade-up" data-aos-delay="300">Mission</span></h3>
-                    <div class="missioin-text" data-aos="fade-up" data-aos-delay="700">Embedding innovative digital
-                        solutions and supporting budding entrepreneurs and creative idea owners is the essence of the
-                        UCAS Incubator mission in the Gaza Strip.</div>
-                    <div class="missioin-text" data-aos="fade-up" data-aos-delay="1000">Embedding innovative digital
-                        solutions and supporting budding entrepreneurs and creative idea owners is the essence of the
-                        UCAS Incubator mission in the Gaza Strip.</div>
+                    <h3 class="sec-title" data-aos="fade-up" data-aos-delay="0">Our <span class="line-word" data-aos="fade-up" data-aos-delay="300">Mission</span></h3>
+                    <div class="missioin-text" data-aos="fade-up" data-aos-delay="700">Embedding innovative digital solutions and supporting budding entrepreneurs and creative idea owners is the essence of the UCAS Incubator mission in the Gaza Strip.</div>
+                    <div class="missioin-text" data-aos="fade-up" data-aos-delay="1000">Embedding innovative digital solutions and supporting budding entrepreneurs and creative idea owners is the essence of the UCAS Incubator mission in the Gaza Strip.</div>
 
                     <div class="more-div" data-aos="fade-up" data-aos-delay="1500">
                         <a href="#" class="more-link">See More</a>
@@ -432,7 +423,7 @@
 
     <!-- Start A look into Our Programs; Take a Tour. -->
     <div class="our-program-section">
-        <img loading="lazy" src="assets/images/look-bg.webp" alt="look Dot" class="look-bg" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000"  >
+        <img loading="lazy" src="assets/images/look-bg.webp" alt="look Dot" class="look-bg" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
         <div class="container">
             <h3 class="sec-title" data-aos="fade-up" data-aos-delay="200">A look into Our <span class="line-word">
                     Programs;</span> Take a Tour.</h3>
@@ -441,19 +432,15 @@
                     <div class="swiper-slide">
                         <div class="sp-grog-pag">
                             <div class="programs-box">
-                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot"
-                                    class="prog-box-dot">
+                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot" class="prog-box-dot">
                                 <div class="prog-img">
                                     <img loading="lazy" src="assets/images/Bitmap1.webp" alt="Programs">
                                 </div>
                                 <div class="prog-content">
                                     <div class="prog-con-main">
                                         <h3 class="prog-name">Acceleration and networking</h3>
-                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo"
-                                            class="prog-logo">
-                                        <p class="prog-info">What looked like a small patch of purple grass, above five
-                                            feet square, was moving across the sand in their direction. When it came
-                                            near enough he perceived.</p>
+                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo" class="prog-logo">
+                                        <p class="prog-info">What looked like a small patch of purple grass, above five feet square, was moving across the sand in their direction. When it came near enough he perceived.</p>
 
                                     </div>
                                     <div class="more-div">
@@ -466,19 +453,15 @@
                     <div class="swiper-slide">
                         <div class="sp-grog-pag">
                             <div class="programs-box">
-                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot"
-                                    class="prog-box-dot">
+                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot" class="prog-box-dot">
                                 <div class="prog-img">
                                     <img loading="lazy" src="assets/images/Bitmap2.webp" alt="Programs">
                                 </div>
                                 <div class="prog-content">
                                     <div class="prog-con-main">
                                         <h3 class="prog-name">Acceleration and networking</h3>
-                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo"
-                                            class="prog-logo">
-                                        <p class="prog-info">What looked like a small patch of purple grass, above five
-                                            feet square, was moving across the sand in their direction. When it came
-                                            near enough he perceived.</p>
+                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo" class="prog-logo">
+                                        <p class="prog-info">What looked like a small patch of purple grass, above five feet square, was moving across the sand in their direction. When it came near enough he perceived.</p>
 
                                     </div>
                                     <div class="more-div">
@@ -491,19 +474,15 @@
                     <div class="swiper-slide">
                         <div class="sp-grog-pag">
                             <div class="programs-box">
-                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot"
-                                    class="prog-box-dot">
+                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot" class="prog-box-dot">
                                 <div class="prog-img">
                                     <img loading="lazy" src="assets/images/Bitmap1.webp" alt="Programs">
                                 </div>
                                 <div class="prog-content">
                                     <div class="prog-con-main">
                                         <h3 class="prog-name">Acceleration and networking</h3>
-                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo"
-                                            class="prog-logo">
-                                        <p class="prog-info">What looked like a small patch of purple grass, above five
-                                            feet square, was moving across the sand in their direction. When it came
-                                            near enough he perceived.</p>
+                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo" class="prog-logo">
+                                        <p class="prog-info">What looked like a small patch of purple grass, above five feet square, was moving across the sand in their direction. When it came near enough he perceived.</p>
 
                                     </div>
                                     <div class="more-div">
@@ -516,19 +495,15 @@
                     <div class="swiper-slide">
                         <div class="sp-grog-pag">
                             <div class="programs-box">
-                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot"
-                                    class="prog-box-dot">
+                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot" class="prog-box-dot">
                                 <div class="prog-img">
                                     <img loading="lazy" src="assets/images/Bitmap2.webp" alt="Programs">
                                 </div>
                                 <div class="prog-content">
                                     <div class="prog-con-main">
                                         <h3 class="prog-name">Acceleration and networking</h3>
-                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo"
-                                            class="prog-logo">
-                                        <p class="prog-info">What looked like a small patch of purple grass, above five
-                                            feet square, was moving across the sand in their direction. When it came
-                                            near enough he perceived.</p>
+                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo" class="prog-logo">
+                                        <p class="prog-info">What looked like a small patch of purple grass, above five feet square, was moving across the sand in their direction. When it came near enough he perceived.</p>
 
                                     </div>
                                     <div class="more-div">
@@ -541,19 +516,15 @@
                     <div class="swiper-slide">
                         <div class="sp-grog-pag">
                             <div class="programs-box">
-                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot"
-                                    class="prog-box-dot">
+                                <img loading="lazy" src="assets/images/porg-box-dot.webp" alt="porg box dot" class="prog-box-dot">
                                 <div class="prog-img">
                                     <img loading="lazy" src="assets/images/Bitmap1.webp" alt="Programs">
                                 </div>
                                 <div class="prog-content">
                                     <div class="prog-con-main">
                                         <h3 class="prog-name">Acceleration and networking</h3>
-                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo"
-                                            class="prog-logo">
-                                        <p class="prog-info">What looked like a small patch of purple grass, above five
-                                            feet square, was moving across the sand in their direction. When it came
-                                            near enough he perceived.</p>
+                                        <img loading="lazy" src="assets/images/prog-logo.webp" alt="prog-logo" class="prog-logo">
+                                        <p class="prog-info">What looked like a small patch of purple grass, above five feet square, was moving across the sand in their direction. When it came near enough he perceived.</p>
 
                                     </div>
                                     <div class="more-div">
@@ -585,10 +556,8 @@
     <div class="our-delighted">
         <img loading="lazy" src="assets/images/shape.webp" alt="our delighted bg img" class="our-delighted-bg-img" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
         <div class="container">
-            <h3 class="sec-title" data-aos="fade-up" data-aos-delay="900">Our Delighted <span class="line-word"
-                    data-aos="fade-up" data-aos-delay="300"> Partners</span></h3>
-            <p class="our-deli-text" data-aos="fade-up" data-aos-delay="600">We believe in building solid and long-term
-                relationships underpinned by` excellence to enhance our deliverables to our target audience.
+            <h3 class="sec-title" data-aos="fade-up" data-aos-delay="900">Our Delighted <span class="line-word" data-aos="fade-up" data-aos-delay="300"> Partners</span></h3>
+            <p class="our-deli-text" data-aos="fade-up" data-aos-delay="600">We believe in building solid and long-term relationships underpinned by` excellence to enhance our deliverables to our target audience.
             </p>
         </div>
         <div class="swiper mySwiper">
@@ -653,9 +622,7 @@
                         <div class="swiper-padding">
                             <div class="exper-content">
                                 <img loading="lazy" src="assets/images/avatar.webp" alt="Expert" class="expert-img">
-                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and
-                                    day merged into one continuous greyness the sky took on a wonderful deepness of
-                                    blue, a splendid luminous color like that of early twilight; the jerking
+                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early twilight; the jerking
                                     sun became a streak of fire, a brilliant arch.</p>
                                 <div class="exper-box">
                                     <h3 class="expert-name">Zaid Nabil</h3>
@@ -669,9 +636,7 @@
                         <div class="swiper-padding">
                             <div class="exper-content">
                                 <img loading="lazy" src="assets/images/avatar.webp" alt="Expert" class="expert-img">
-                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and
-                                    day merged into one continuous greyness the sky took on a wonderful deepness of
-                                    blue, a splendid luminous color like that of early twilight; the jerking
+                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early twilight; the jerking
                                     sun became a streak of fire, a brilliant arch.</p>
                                 <div class="exper-box">
                                     <h3 class="expert-name">Zaid Nabil</h3>
@@ -685,9 +650,7 @@
                         <div class="swiper-padding">
                             <div class="exper-content">
                                 <img loading="lazy" src="assets/images/avatar.webp" alt="Expert" class="expert-img">
-                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and
-                                    day merged into one continuous greyness the sky took on a wonderful deepness of
-                                    blue, a splendid luminous color like that of early twilight; the jerking
+                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early twilight; the jerking
                                     sun became a streak of fire, a brilliant arch.</p>
                                 <div class="exper-box">
                                     <h3 class="expert-name">Mohammed Rayyan</h3>
@@ -701,9 +664,7 @@
                         <div class="swiper-padding">
                             <div class="exper-content">
                                 <img loading="lazy" src="assets/images/avatar.webp" alt="Expert" class="expert-img">
-                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and
-                                    day merged into one continuous greyness the sky took on a wonderful deepness of
-                                    blue, a splendid luminous color like that of early twilight; the jerking
+                                <p class="exper-text">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early twilight; the jerking
                                     sun became a streak of fire, a brilliant arch.</p>
                                 <div class="exper-box">
                                     <h3 class="expert-name">Mohammed Ashraf Rayyan</h3>
@@ -732,13 +693,11 @@
     <div class="people-happen">
         <img loading="lazy" src="assets/images/phimg.webp" alt="phimg" class="phimg" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
         <div class="container">
-            <h3 class="sec-title" data-aos="fade-up" data-aos-delay="900">See the <span class="line-word"> People</span>
-                who are Making it Happen</h3>
+            <h3 class="sec-title" data-aos="fade-up" data-aos-delay="900">See the <span class="line-word"> People</span> who are Making it Happen</h3>
         </div>
         <div class="people-happen-content">
             <div class="ph-img-box" data-aos="fade-up" data-aos-delay="0">
-                <img loading="lazy" src="assets/images/npd-big.webp" alt="People who are Making it Happen"
-                    class="ph-img">
+                <img loading="lazy" src="assets/images/npd-big.webp" alt="People who are Making it Happen" class="ph-img">
                 <div class="ph-meet-box">
                     <h2>Meet Our Team: See The People Who Are Making It Happen</h2>
                     <a href="#">See All</a>
@@ -819,7 +778,7 @@
 
 
     <div class="incubator">
-        <img loading="lazy" src="assets/images/inc-bg.webp" alt="" class="inc-bg"  data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+        <img loading="lazy" src="assets/images/inc-bg.webp" alt="" class="inc-bg" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
         <div class="continer">
             <div class="swiper swiper-incubator">
                 <!-- Additional required wrapper -->
@@ -836,9 +795,7 @@
                                 <div class="col-md-6 inc-info-box">
                                     <h3 class="sec-title">UCAS incubator<span class="line-word"> Annual Report</span>
                                     </h3>
-                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder
-                                        text commonly used to demonstrate the visual form of a document or a typeface
-                                        without relying on meaningful content. Lorem ipsum may be used as a placeholder
+                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
                                         before final copy is available.</p>
                                     <div class="read-online">
                                         <a href="#" class="read-on-link">Read Online</a>
@@ -858,9 +815,7 @@
                                 <div class="col-md-6 inc-info-box">
                                     <h3 class="sec-title">UCAS incubator<span class="line-word"> Annual Report</span>
                                     </h3>
-                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder
-                                        text commonly used to demonstrate the visual form of a document or a typeface
-                                        without relying on meaningful content. Lorem ipsum may be used as a placeholder
+                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
                                         before final copy is available.</p>
                                     <div class="read-online">
                                         <a href="#" class="read-on-link">Read Online</a>
@@ -880,9 +835,7 @@
                                 <div class="col-md-6 inc-info-box">
                                     <h3 class="sec-title">UCAS incubator<span class="line-word"> Annual Report</span>
                                     </h3>
-                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder
-                                        text commonly used to demonstrate the visual form of a document or a typeface
-                                        without relying on meaningful content. Lorem ipsum may be used as a placeholder
+                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
                                         before final copy is available.</p>
                                     <div class="read-online">
                                         <a href="#" class="read-on-link">Read Online</a>
@@ -902,9 +855,7 @@
                                 <div class="col-md-6 inc-info-box">
                                     <h3 class="sec-title">UCAS incubator<span class="line-word"> Annual Report</span>
                                     </h3>
-                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder
-                                        text commonly used to demonstrate the visual form of a document or a typeface
-                                        without relying on meaningful content. Lorem ipsum may be used as a placeholder
+                                    <p class="inc-textt">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
                                         before final copy is available.</p>
                                     <div class="read-online">
                                         <a href="#" class="read-on-link">Read Online</a>
@@ -937,20 +888,14 @@
             <h3 class="sec-title">What People Are <span class="line-word">Talking About</span> Us</h3>
             <div class="people-talking-imgs-boxs">
                 <div class="pl-taking-col-1 imgs-box-pp">
-                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed.webp"
-                        alt="Twitter Feed">
-                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy"
-                        src="assets/images/twitter-feed-article.webp" alt="Twitter Article">
-                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy"
-                        src="assets/images/twitter-feed-conversation.webp" alt="Twitter Feed">
+                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed.webp" alt="Twitter Feed">
+                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed-article.webp" alt="Twitter Article">
+                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed-conversation.webp" alt="Twitter Feed">
                 </div>
                 <div class="pl-taking-col-2 imgs-box-pp">
-                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy"
-                        src="assets/images/twitter-feed-photo.webp" alt="Twitter Feed">
-                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy"
-                        src="assets/images/twitter-feed-video.webp" alt="Twitter Feed">
-                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy"
-                        src="assets/images/twitter-feed-link.webp" alt="Twitter Feed">
+                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed-photo.webp" alt="Twitter Feed">
+                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed-video.webp" alt="Twitter Feed">
+                    <img data-aos="fade-up" data-aos-delay="100" loading="lazy" src="assets/images/twitter-feed-link.webp" alt="Twitter Feed">
 
                 </div>
             </div>
@@ -1000,9 +945,7 @@
             <div class="footer-top-section">
                 <div class="footer-colm">
                     <img loading="lazy" src="assets/images/footer-logo.webp" alt="Footer Logo">
-                    <p class="footer-text">Yucas Technology Incubator to build and support entrepreneurs who have
-                        ambitious creative and development ideas by providing administrative, technical and financial
-                        support in order to grow and continue to turn into successful commercial
+                    <p class="footer-text">Yucas Technology Incubator to build and support entrepreneurs who have ambitious creative and development ideas by providing administrative, technical and financial support in order to grow and continue to turn into successful commercial
                         projects.
                     </p>
                 </div>
@@ -1011,8 +954,7 @@
                         CONTACT US
                     </p>
                     <p class="cont-text">
-                        Kuwait Center - University College of Applied Sciences - Gaza, Tel Al-Hawa branching from Aoun
-                        Al-Shawa Street, Gaza
+                        Kuwait Center - University College of Applied Sciences - Gaza, Tel Al-Hawa branching from Aoun Al-Shawa Street, Gaza
                     </p>
                     <div class="cont-way">
 
@@ -1069,14 +1011,11 @@
     <!-- End Footer  -->
 
     <!-- <script src="assets/js/bootstrap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.js"
-        integrity="sha512-g+qKl+LYdI74iYWV+VI91ahB/N6mVjrP8aGCtyIGvM2FkgpwbEEey0eUVUuqNn94yYS6/WxVwTawukEqaf+53A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.js" integrity="sha512-g+qKl+LYdI74iYWV+VI91ahB/N6mVjrP8aGCtyIGvM2FkgpwbEEey0eUVUuqNn94yYS6/WxVwTawukEqaf+53A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@cycjimmy/swiper-animation@6/dist/swiper-animation.umd.min.js"></script>
 
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 
 </body>
